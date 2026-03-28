@@ -1,0 +1,38 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.inFolder("Archive")
+    - status == "archived"
+properties:
+  file.name:
+    displayName: Note
+  type:
+    displayName: Type
+  area:
+    displayName: Area
+  created:
+    displayName: Created
+  file.mtime:
+    displayName: Updated
+views:
+  - type: table
+    name: Recent
+    order:
+      - file.mtime
+      - created
+  - type: table
+    name: By type
+    groupBy:
+      property: type
+      direction: ASC
+    order:
+      - type
+      - file.mtime
+  - type: table
+    name: By area
+    groupBy:
+      property: area
+      direction: ASC
+    order:
+      - area
+      - file.mtime

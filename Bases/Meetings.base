@@ -1,0 +1,78 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.inFolder("Meetings")
+    - type == "meeting"
+properties:
+  file.name:
+    displayName: Meeting
+  date:
+    displayName: Date
+  status:
+    displayName: Status
+  follow_up:
+    displayName: Follow-up
+  project:
+    displayName: Project
+  team:
+    displayName: Team
+  topic:
+    displayName: Topic
+  file.mtime:
+    displayName: Updated
+views:
+  - type: table
+    name: Recent
+    order:
+      - date
+      - file.mtime
+  - type: table
+    name: Follow-up
+    filters:
+      and:
+        - follow_up == true
+    order:
+      - date
+      - file.mtime
+  - type: table
+    name: Open
+    filters:
+      and:
+        - status == "open"
+    order:
+      - date
+      - file.mtime
+  - type: table
+    name: Last 30 days
+    filters:
+      and:
+        - date >= today() - "30d"
+    order:
+      - date
+      - file.mtime
+  - type: table
+    name: This year
+    filters:
+      and:
+        - date >= today() - "365d"
+    order:
+      - date
+      - file.mtime
+  - type: table
+    name: By project
+    groupBy:
+      property: project
+      direction: ASC
+    order:
+      - project
+      - date
+      - file.mtime
+  - type: table
+    name: By team
+    groupBy:
+      property: team
+      direction: ASC
+    order:
+      - team
+      - date
+      - file.mtime

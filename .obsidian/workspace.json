@@ -1,0 +1,202 @@
+{
+  "main": {
+    "id": "b85419bacb14ad3c",
+    "type": "split",
+    "children": [
+      {
+        "id": "feb6d2fc155818d8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "569ab48c1c481fee",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b767ce7750969aa1",
+    "type": "split",
+    "children": [
+      {
+        "id": "1aeb2dc384cd5d7d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "df54bb3616d29198",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "b38452083bef2de7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "path:Inbox",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "de4e1b3beb4adeec",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "844ca2cf87eef3df",
+    "type": "split",
+    "children": [
+      {
+        "id": "0436b928754b9809",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "95e7a623a5011487",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Templates/Meeting Note.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Meeting Note"
+            }
+          },
+          {
+            "id": "e43e8a5fbe47db2a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from README"
+            }
+          },
+          {
+            "id": "74dd1a4f4adbe187",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "143c8e0488f76a6f",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "26cda6c8563f26f1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of README"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "workspaces:Manage workspace layouts": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "569ab48c1c481fee",
+  "lastOpenFiles": [
+    "README.md",
+    "Work.md",
+    "Meetings.md",
+    "Inbox.md",
+    "Notes.md",
+    "Archive.md",
+    "Templates/Daily Note.md",
+    "Templates/Meeting Note.md",
+    "Templates/Inbox Note.md",
+    "Templates/Note.md",
+    "Bases/Work days.base",
+    "Bases/Meetings.base",
+    "Bases/Inbox.base",
+    "Bases/Notes.base",
+    "Bases/Archive.base"
+  ]
+}

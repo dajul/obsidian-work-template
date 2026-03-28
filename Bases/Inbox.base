@@ -1,0 +1,46 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.inFolder("Inbox")
+    - type == "inbox"
+properties:
+  file.name:
+    displayName: Note
+  created:
+    displayName: Created
+  status:
+    displayName: Status
+  topic:
+    displayName: Topic
+  file.mtime:
+    displayName: Updated
+views:
+  - type: table
+    name: Recent
+    order:
+      - created
+      - file.mtime
+  - type: table
+    name: Active
+    filters:
+      and:
+        - status == "active"
+    order:
+      - created
+      - file.mtime
+  - type: table
+    name: Archived
+    filters:
+      and:
+        - status == "archived"
+    order:
+      - created
+      - file.mtime
+  - type: table
+    name: Created today
+    filters:
+      and:
+        - created >= today()
+    order:
+      - created
+      - file.mtime
